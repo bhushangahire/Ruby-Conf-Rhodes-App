@@ -1,0 +1,25 @@
+#sdk: "/usr/share/ruby-rvm/gems/ruby-1.9.2-p290/gems/rhodes-3.3.2"
+sdkversion: 3.3.2
+name: Ruby-Conf-2012
+version: 1.0
+vendor: Bhushan Ahire
+build: debug
+bbver: 4.6
+applog: rubyconflog.txt
+iphone:
+  configuration: Release
+  sdk: iphonesimulator5.0
+  provisionprofile: 
+  codesignidentity: 
+  entitlements: 
+  BundleIdentifier: com.rhomobile.ruby-conf-2010
+  BundleURLScheme: ruby-conf-2010
+wp:
+  productid: 1709da90-48d1-012f-b6e2-001d7db81493
+symbian:
+  uid: 0xee2a67da
+android:
+  version: 2.3.3
+extensions:
+  - json
+  - another-extension

@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <title>Ruby Conf 2012 Schedule</title>
+
+    <% is_bb6 = System::get_property('platform') == 'Blackberry' && (System::get_property('os_version').split('.')[0].to_i >= 6) %>
+
+    <% if is_bb6 %>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <% else %>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <% end %>
+
+    <% if System::get_property('platform') == 'WP7' %>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <% end %>
+
+        <link rel="stylesheet" href="/public/css/sencha-touch.css" type="text/css" media="screen"/>
+        <link rel="stylesheet" href="/public/css/styles.css" type="text/css" media="screen"/>
+
+        <script src="/public/js/sencha-touch.js" type="text/javascript" charset="utf-8"></script>        
+        <script src="/public/js/index.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/public/js/data.js" type="text/javascript" charset="utf-8"></script>        
+</head>
+
+<body>
+    <%= @content %>
+</body>
+
+</html>
